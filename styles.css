@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+.header a img {
+    margin-right: 20px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    font-family: Arial;
+    font-size: small;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.header .icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: small;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+.overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+
+.ad{
+    background-color: rgb(28, 104, 219);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+}
+.ad a{
+    text-decoration: none;
+    color: white;
+}
+.ad a:hover{
+    text-decoration: underline;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 8%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.banner-button{
+    background-color: rgb(28, 104, 219);
+    text-align: center;
+    padding: 6px 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.banner-button a{
+    color: white;
+    text-decoration: none;
+}
+.overlay-text a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.icon-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+  }
+  
+  .icon-item i {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .icon-item a {
+    text-decoration: underline;
+    color: #0067b8;
+    font-size: 15px;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.business-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  .card {
+    background: white;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+ 
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .badge {
+    background-color: #ffc107;
+    color: black;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  
+  .card h1 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .card p {
+    font-size: 13px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  button {
+    background-color: #0067b8;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #004a87;
+  }
+  .footer {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 20px 20px;
+    color: #333;
+    font-size: 12px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 180px;
+    margin: 10px;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 18px 0px;
+  }
+  
+  .footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .language-privacy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .language-privacy a{
+    text-decoration: none;
+    color:#333;
+  }
+  
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 12px;
+    margin-left: 200px;
+  }
+  
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .social a {
+    color: #1a1a1a;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        width: 100%;
+        border-top: 1px solid #ccc;
+    }
+
+    .header .icons {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .header .icons div {
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+}
