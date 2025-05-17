@@ -54,6 +54,7 @@ body {
     cursor: pointer;
     font-size: small;
 }
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -67,6 +68,7 @@ body {
     text-decoration: none;
     display: block;
 }
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -95,8 +97,13 @@ body {
 }
 
 @keyframes fade {
-    from { opacity: 0.4 }
-    to { opacity: 1 }
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .overlay-text {
@@ -105,7 +112,7 @@ body {
     left: 8%;
 }
 
-.ad{
+.ad {
     background-color: rgb(28, 104, 219);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -113,36 +120,43 @@ body {
     text-align: center;
     padding: 5px;
 }
-.ad a{
+
+.ad a {
     text-decoration: none;
     color: white;
 }
-.ad a:hover{
+
+.ad a:hover {
     text-decoration: underline;
 }
+
 .overlay-text {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 8%;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-.banner-button{
+
+.banner-button {
     background-color: rgb(28, 104, 219);
     text-align: center;
     padding: 6px 5px;
     width: 80%;
     margin-bottom: 10px;
 }
-.banner-button a{
+
+.banner-button a {
     color: white;
     text-decoration: none;
 }
-.overlay-text a{
+
+.overlay-text a {
     color: white;
     text-decoration: none;
     padding: 5px;
 }
+
 .icon-grid {
     display: flex;
     justify-content: center;
@@ -150,27 +164,27 @@ body {
     padding: 50px 0;
     gap: 60px;
     flex-wrap: wrap;
-  }
-  
-  .icon-item {
+}
+
+.icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
-  }
-  
-  .icon-item i {
+}
+
+.icon-item i {
     font-size: 40px;
     margin-bottom: 15px;
-  }
-  
-  .icon-item a {
+}
+
+.icon-item a {
     text-decoration: underline;
     color: #0067b8;
     font-size: 15px;
     font-weight: 600;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .business-container {
     display: flex;
@@ -179,30 +193,32 @@ body {
     margin-left: 7%;
     margin-right: 7%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+}
+
 .card-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
-  .card {
+
+.card {
     background: white;
     width: 250px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
- 
-  .card img {
+}
+
+.card img {
     width: 100%;
     height: auto;
-  }
-  
-  .card-content {
+}
+
+.card-content {
     padding: 16px;
-  }
-  
-  .badge {
+}
+
+.badge {
     background-color: #ffc107;
     color: black;
     padding: 4px 8px;
@@ -211,22 +227,22 @@ body {
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 8px;
-  }
-  
-  .card h1 {
+}
+
+.card h1 {
     font-size: 18px;
     margin: 10px 0;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .card p {
+}
+
+.card p {
     font-size: 13px;
     color: #333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  button {
+}
+
+button {
     background-color: #0067b8;
     color: white;
     border: none;
@@ -235,58 +251,59 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #004a87;
-  }
-  .footer {
+}
+
+.footer {
     background-color: #f5f5f5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 40px 20px 20px;
     color: #333;
     font-size: 12px;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-  }
-  
-  .footer-column {
+}
+
+.footer-column {
     flex: 1;
     min-width: 180px;
     margin: 10px;
-  }
-  
-  .footer-column h4 {
+}
+
+.footer-column h4 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
-  }
-  
-  .footer-column ul {
+}
+
+.footer-column ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .footer-column ul li {
+}
+
+.footer-column ul li {
     margin: 18px 0px;
-  }
-  
-  .footer-column ul li a {
+}
+
+.footer-column ul li a {
     color: #333;
     text-decoration: none;
-  }
-  
-  .footer-column ul li a:hover {
+}
+
+.footer-column ul li a:hover {
     text-decoration: underline;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     border-top: 1px solid #ddd;
     margin-top: 30px;
     padding-top: 20px;
@@ -294,39 +311,41 @@ body {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-  }
-  
-  .language-privacy {
+}
+
+.language-privacy {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
     margin-bottom: 15px;
-  }
-  .language-privacy a{
-    text-decoration: none;
-    color:#333;
-  }
-  
+}
 
-  .footer-links {
+.language-privacy a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.footer-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     font-size: 12px;
     margin-left: 200px;
-  }
-  
-  .footer-links a {
+}
+
+.footer-links a {
     color: #333;
     text-decoration: none;
-  }
-  
-  .footer-links a:hover {
+}
+
+.footer-links a:hover {
     text-decoration: underline;
-  }
-  .social {
+}
+
+.social {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -336,14 +355,15 @@ body {
     margin-left: 7%;
     margin-top: 5%;
     margin-bottom: 5%;
-  }
-  
-  .social a {
+}
+
+.social a {
     color: #1a1a1a;
     font-size: 20px;
     text-decoration: none;
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
