@@ -15,8 +15,23 @@ function showSlides() {
 }
 document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
-  const overlay = document.getElementById('popupOverlay');
-  overlay.style.display = 'flex';
+
+  const data = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    message: document.getElementById('message').value
+  };
+
+  fetch('/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.text())
+  .then(() => {
+    document.getElementById('popupOverlay').style.display = 'flex';
+  });
 });
 
 document.getElementById('popupClose').addEventListener('click', function () {

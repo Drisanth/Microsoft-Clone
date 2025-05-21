@@ -1,0 +1,24 @@
+{
+  "name": "microsoft-clone",
+  "version": "1.0.0",
+  "description": "This is a static clone of the Microsoft homepage built using **HTML**, **CSS**, and **JavaScript**. The project replicates the layout, design, and some basic interactivity of the official [Microsoft.com](https://www.microsoft.com) homepage as a front-end development exercise.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drisanth/Microsoft-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drisanth/Microsoft-Clone/issues"
+  },
+  "homepage": "https://github.com/Drisanth/Microsoft-Clone#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
