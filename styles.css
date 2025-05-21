@@ -189,7 +189,6 @@ body {
 .business-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5%;
     margin-left: 7%;
     margin-right: 7%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -255,6 +254,10 @@ button {
 
 button:hover {
     background-color: #004a87;
+}
+
+.banner-container{
+    padding: 5%;
 }
 
 .footer {
