@@ -13,3 +13,13 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000);
 }
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const overlay = document.getElementById('popupOverlay');
+  overlay.style.display = 'flex';
+});
+
+document.getElementById('popupClose').addEventListener('click', function () {
+  document.getElementById('popupOverlay').style.display = 'none';
+  document.getElementById('contactForm').reset();
+});
